@@ -1,0 +1,411 @@
+.slider {
+    width: 100%;
+    height: 35rem;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1.5s ease;
+}
+
+.slider .slide.current {
+    transform: translateX(0);
+    opacity: 1;
+
+}
+
+
+.slider .image1 {
+    position: relative;
+
+}
+
+
+.slider .image1 img {
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index: -1;
+
+}
+
+
+.slider .image1 p {
+    position: absolute;
+    top: 30rem;
+    left: 40px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+.slider .joined {
+    position: relative;
+
+}
+
+.slider .joined .lines {
+    position: absolute;
+    width: 2px;
+    height: 400px;
+    background: #cacacc;
+    left: 26rem;
+    top: 1rem;
+
+    z-index: 1;
+}
+
+.slider .joined .lines.one {
+    left: 48rem;
+    top: 23rem;
+}
+
+.slider .joined .lines.two {
+    left: 66rem;
+    top: 0rem;
+    z-index: -1;
+}
+
+
+.slider .alpha {
+    position: relative;
+}
+
+.slider .alpha .exclus {
+    position: relative;
+    bottom: -72px;
+    left: 300px;
+    font-weight: 400;
+    font-size: 5.5rem;
+    letter-spacing: 1px;
+}
+
+.slider .alpha .collec {
+    position: absolute;
+    bottom: -190px;
+    left: 450px;
+    font-weight: 400;
+    font-size: 5.5rem;
+    z-index: 1;
+    letter-spacing: 1px;
+}
+
+.slider .alpha .lines {
+    position: absolute;
+    width: 470px;
+    height: 2px;
+    background: #111;
+    left: 20rem;
+    top: 20rem;
+}
+
+.slider .pra {
+    position: relative;
+}
+
+.slider p {
+    position: absolute;
+    bottom: -17rem;
+    left: 27rem;
+    font-weight: 400;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+
+
+.slider .image2 {
+    position: relative;
+}
+
+.slider .image2 img {
+    width: 370px;
+    height: 550px;
+    object-fit: cover;
+    position: absolute;
+    top: -4rem;
+    left: 50rem;
+
+}
+
+.slider .image2 p {
+    position: absolute;
+    top: -5.5rem;
+    left: 50rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.slider .iconss {
+    position: relative;
+    z-index: 3;
+}
+
+.slider .icons {
+    position: absolute;
+    top: 30rem;
+    /* left: 38rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+
+}
+
+.slider .icons .icon {
+    border: 1px solid #999;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.slider .icons .icon.one {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .slider .image1 img {
+        width: 210px;
+        height: 350px;
+        top: 100px;
+        left: 10px;
+    }
+
+    .slider .image1 p {
+        top: 28.5rem;
+        left: 10px;
+    }
+    
+    .slider .joined .lines {
+        left: 20rem;
+        top: 1rem;
+    }
+    
+    .slider .joined .lines.one {
+        left: 39rem;
+        top: 23rem;
+    }
+    
+    .slider .joined .lines.two {
+        left: 56rem;
+        top: 0rem;
+        z-index: -1;
+    }
+
+    .slider .alpha .exclus {
+        bottom: -72px;
+        left: 230px;
+    }
+    
+    .slider .alpha .collec {
+        bottom: -190px;
+        left: 350px;
+    }
+    
+    .slider .alpha .lines {
+        width: 530px;
+        height: 2px;
+        left: 16rem;
+        top: 20rem;
+    }
+    
+    .slider p {
+        bottom: -17rem;
+        left: 21rem;
+    }
+    
+    .slider .image2 img {
+        width: 350px;
+        height: 520px;
+        top: -4rem;
+        left: 41rem;
+    }
+    
+    .slider .image2 p {
+        top: -5.5rem;
+        left: 41rem;
+    }
+    
+}
+
+@media screen and (max-width: 940px) {
+    .slider .image1 img {
+        width: 210px;
+        height: 350px;
+        top: 100px;
+        left: 10px;
+    }
+
+    .slider .image1 p {
+        top: 28.5rem;
+        left: 10px;
+    }
+    
+    .slider .joined .lines {
+        left: 18rem;
+        top: 1rem;
+    }
+    
+    .slider .joined .lines.one {
+        left: 33rem;
+        top: 23rem;
+    }
+    
+    .slider .joined .lines.two {
+        left: 50rem;
+        top: 0rem;
+    }
+
+    .slider .alpha .exclus {
+        bottom: -72px;
+        left: 230px;
+        font-size: 4rem;
+    }
+    
+    .slider .alpha .collec {
+        bottom: -170px;
+        left: 300px;
+        font-size: 4rem;
+    }
+    
+    .slider .alpha .lines {
+        width: 400px;
+        height: 2px;
+        left: 15rem;
+        top: 17rem;
+    }
+    
+    .slider p {
+        bottom: -15rem;
+        left: 19rem;
+        font-size: 2.5rem;
+    }
+    
+    .slider .image2 img {
+        width: 320px;
+        height: 500px;
+        top: -4rem;
+        left: 35rem;
+    }
+    
+    .slider .image2 p {
+        top: -5.5rem;
+        left: 35rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .slider .image1 img {
+        width: 180px;
+        height: 280px;
+        top: 100px;
+        left: 10px;
+    }
+
+    .slider .image1 p {
+        top: 24rem;
+        left: 10px;
+        font-size: 14px;
+    }
+    
+    .slider .joined .lines {
+        left: 15rem;
+        top: 1rem;
+        z-index: 2;
+    }
+    
+    .slider .joined .lines.one {
+        left: 28rem;
+        top: 23rem;
+    }
+    
+    .slider .joined .lines.two {
+        left: 43rem;
+        top: 0rem;
+    }
+
+    .slider .alpha .exclus {
+        bottom: -72px;
+        left: 200px;
+        font-size: 4rem;
+        z-index: 1;
+    }
+    
+    .slider .alpha .collec {
+        bottom: -170px;
+        left: 250px;
+        font-size: 4rem;
+    }
+    
+    .slider .alpha .lines {
+        width: 400px;
+        height: 2px;
+        left: 12rem;
+        top: 17rem;
+    }
+    
+    .slider p {
+        bottom: -15rem;
+        left: 17rem;
+        font-size: 2.5rem;
+    }
+    
+    .slider .image2 img {
+        width: 260px;
+        height: 450px;
+        top: -4rem;
+        left: 30rem;
+    }
+    
+    .slider .image2 p {
+        top: -5.5rem;
+        left: 30rem;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .slider .image1 {
+        height: 50rem;
+    }
+
+    .slider .image1 img {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+    
+    .slider .image1 p {
+        top: 2rem;
+        color: orangered;
+        left: 10px;
+    }
+
+    .slider .image2,
+    .slider .pra,
+    .slider .alpha,
+    .slider .joined {
+        display: none;
+    }
+    .slider .icons {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

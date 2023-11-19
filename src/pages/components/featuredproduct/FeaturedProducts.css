@@ -1,0 +1,19 @@
+.featuredproducts .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredproducts .top h1 {
+    /* flex: 2; */
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+}
+
+.featuredproducts .top p {
+    /* flex: 2; */
+    color: gray;
+    font-size: 14px;
+}

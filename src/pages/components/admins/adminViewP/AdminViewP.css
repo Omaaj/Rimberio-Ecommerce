@@ -1,0 +1,111 @@
+.tablea {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bondings {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.bondings::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tablea h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(67, 66, 66);
+}
+
+.tablea table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablea table thead {
+    border-top: 2px solid #3246df;
+    border-bottom: 2px solid #3246df;
+
+}
+
+.tablea table thead tr th{
+    padding: 5px 7px 5px 7px;
+    font-size: 13px;
+    border-right: 1px solid #ddd;
+    font-weight: 600;
+    text-align: start;
+}
+
+
+.tablea table tbody tr td {
+    padding: 10px;
+    font-size: 14px;
+    color: #111;
+    /* vertical-align: top; */
+    cursor: pointer;
+
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    /* border-right: 1px solid #ddd; */
+}
+
+.tablea table tbody tr td img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.tablea table tbody tr td .actionss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablea table tbody tr td .actionss .links_ad {
+    font-size: 16px;
+    color: peru;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tablea table tbody tr td .actionss .iconss {
+    font-size: 16px;
+    color: rgb(248, 63, 63);
+    cursor: pointer;
+}
+
+.spans {
+    line-height: 0.5;
+    margin: 10px 0 20px 0;
+}
+
+.spans p {
+    margin-bottom: 15px;
+}
+
+.spans p span {
+    margin-right: 5px;
+    color: #3246df;
+    font-weight: 600;
+}
+
+.paginatins {
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding: 0 10rem; */
+    /* width: 100px; */
+    display: flex;
+    justify-content: center;
+    /* background: red; */
+}
+
+@media screen and (max-width: 700px) {
+    .tablea {
+        padding: 0 1rem;
+    }
+}

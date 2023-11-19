@@ -1,0 +1,87 @@
+.adminss {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.adminss .navbars {
+    flex: 1;
+    width: 100%;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    background: #ffff;
+}
+
+.adminss .contents {
+    flex: 3;
+    margin-left: 10px;
+}
+
+.admin-dash {
+    margin-top: -7px;
+    display: none;
+}
+
+.admin-toggle div {
+    width: 1.2rem;
+    height: 0.14rem;
+    margin: 0.3rem;
+    background: #f7921a;
+    transition: all 0.4s ease-in;
+}
+
+
+@media screen and (max-width: 700px) {
+    .adminss {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .admin-dash {
+        display: block;
+        z-index: 3;
+        top: 0;
+        margin-bottom: 4rem;
+        position: fixed;
+        width: 100%;
+        padding-top: 6rem;
+        padding-left: 1.3rem;
+        background: #fff;
+    }
+
+    .admin-toggle {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .adminss .navbars {
+        display: flex;
+        position: fixed;
+        /* background: red; */
+        background: #fff;
+        width: 70%;
+        height: 100%;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 0.5s ease-in;
+        top: 0;
+        overflow-y: auto;
+        right: 0;
+        padding: 7rem 0rem 0 0rem;
+        z-index: 2;
+        transform: translateX(100%);
+    }
+
+    .adminss .navbars.navivation {
+        transform: translateX(0);
+        /* background: red; */
+    }
+
+    .adminss .contents {
+        margin-left: 10px;
+        margin-top: 3rem;
+    }
+    
+
+}

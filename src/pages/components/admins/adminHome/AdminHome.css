@@ -1,0 +1,65 @@
+/* .home { */
+    /* padding: 0 4rem 0 0; */
+/* } */
+
+.home h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(67, 66, 66);
+}
+
+
+.home .info-boxa {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.home .info-boxa .info {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background: #fff;
+    padding: 10px;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.home .info-boxa .info.info-earnings {
+    border-bottom: 2px solid #b624ff;
+}
+.home .info-boxa .info.info-products {
+    border-bottom: 2px solid chocolate;
+}
+.home .info-boxa .info.info-products1 {
+    border-bottom: 2px solid royalblue;
+}
+.home .info-boxa .info.info-products2 {
+    border-bottom: 2px solid crimson;
+}
+.home .info-boxa .info.info-products3 {
+    border-bottom: 2px solid rgb(54, 106, 2);
+}
+.home .info-boxa .info.info-orders {
+    border-bottom: 2px solid orangered;
+}
+
+@media screen and (max-width: 780px) {
+    .home {
+        padding: 0 20px 0 10px;
+    }
+
+    .home .info-boxa {
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
+    .home .info-boxa .info {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,30 @@
+.clocks .package {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clocks .package .weeks {
+    margin: 3px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #3c3c3c;
+    /* color: rgb(120, 102, 5); */
+}
+
+.clocks .package .weeks h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.clocks .package .weeks p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.clocks .package  span {
+    margin: 0 10px;
+    font-weight: 600;
+}

@@ -1,0 +1,35 @@
+.search {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.search .input {
+    width: 300px;
+    position: relative;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #8f8e8e;
+    outline: none;
+    padding: 0 2.5rem;
+    font-size: 13px;
+}
+
+.search .iconsea{
+    position: absolute;
+    z-index: 1;
+    background: #8f8e8e;
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+    width: 30px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+    .search .input {
+        width: 100%;
+    }
+}

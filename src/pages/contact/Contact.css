@@ -1,0 +1,106 @@
+.contact_container {
+    margin-top: 3rem;
+    padding: 30px 40px;
+    width: 100%;
+    background: #f6f6f6;
+}
+
+.contact_container .contant {
+    padding: 10px 20px;
+    max-width: 100%;
+}
+
+.contact_container .contant h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #010f1c;
+    font-weight: 200;
+}
+
+.contact_container .contant .form {
+    margin-top: 30px;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact_container .contant .form form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_container .contant .form form input {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #010f1c;
+    width: 350px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact_container .contant .form form textarea {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #010f1c;
+    width: 350px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    resize: none;
+}
+
+.contact_container .contant .form form button {
+    margin-top: 30px;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background: #010f1c;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-170%);
+    transition: all 0.4s ease;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact_container .contant .form form button:hover {
+    background: rgb(207, 83, 38);
+}
+
+@media screen and (max-width: 450px) {
+    .contact_container {
+        padding: 30px 0px;
+    }
+
+    .contact_container .contant .form {
+        margin-top: 20px;
+        padding: 20px 20px;
+        width: 100%;
+    }
+    
+    .contact_container .contant .form form input {
+        padding: 10px 10px;
+        width: 100%;
+    }
+    
+    .contact_container .contant .form form textarea {
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    .contact_container .contant .form form button {
+        width: 100%;
+        transform: translateX(-50%);
+    }
+}

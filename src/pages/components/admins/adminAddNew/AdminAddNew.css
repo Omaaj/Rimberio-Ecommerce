@@ -1,0 +1,100 @@
+.admin_products {
+    width: 100%;
+    padding-right: 25rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    /* padding: 20px; */
+    background-color: #f7f7f7;
+}
+
+.admin_products h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(67, 66, 66);
+}
+
+.admin_products .cards {
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.admin_products .cards .input_change {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.admin_products .cards .input_change label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #111;
+}
+
+.admin_products .cards .input_change textarea,
+.admin_products .cards .input_change select,
+.admin_products .cards .input_change input {
+    padding: 6px 8px;
+    border: 1px solid #b6b2b2;
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+    background: none;
+}
+
+.admin_products .cards .input_change .card_imge {
+    border: 1px solid #b6b2b2;
+    padding: 10px 5px 0 5px;
+    border-radius: 5px;
+} 
+
+.admin_products .cards .input_change .card_imge .progress {
+    background: #dedede;
+    border-radius: 50px;
+    height: 25px;
+}
+
+.admin_products .cards .input_change .card_imge .progress .progress_bar {
+    background: #3246df;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50px;
+    padding-left: 12px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.admin_products .cards .input_change .card_imge .input-images {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.admin_products .cards .input_change .card_imge .input-images input {
+    margin-bottom: 10px;
+    
+}
+
+.admin_products .cards .input_change textarea {
+    height: 150px;
+    resize: none;
+}
+
+.admin_products .cards button {
+    width: 100%;
+    background: #3246df;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    /* min-width: 900px; */
+    /* width: 100%; */
+    /* justify-content: space-between; */
+}

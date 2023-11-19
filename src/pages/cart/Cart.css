@@ -1,0 +1,195 @@
+.tables {
+    width: 100%;
+    margin-top: 5rem;
+    overflow: hidden;
+    /* padding: 1rem 0; */
+}
+
+.tables h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(67, 66, 66);
+}
+
+.thtabke {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.thtabke::-webkit-scrollbar {
+    display: none;
+}
+
+.tables table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tables table thead {
+    border-top: 2px solid #3246df;
+    border-bottom: 2px solid #3246df;
+
+}
+
+.tables table thead tr th{
+    padding: 5px 7px 5px 7px;
+    font-size: 13px;
+    border-right: 1px solid #ddd;
+    font-weight: 600;
+    text-align: start;
+}
+
+
+.tables table tbody tr td {
+    padding: 10px;
+    font-size: 14px;
+    color: #111;
+    /* vertical-align: top; */
+    cursor: pointer;
+
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    /* border-right: 1px solid #ddd; */
+}
+
+.tables table tbody tr td img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.tables table tbody tr td .actionss {
+    color: rgb(248, 63, 63);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tables table tbody tr td .buttons {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    /* gap: 10px; */
+}
+
+.tables table tbody tr td .buttons button {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tables table tbody tr td .buttons span {
+    font-size: 12px;
+    width: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.summary .summarybtn .btn {
+    padding: 5px 8px;
+    font-size: 12px;
+    background: darkgoldenrod;
+    border: none;
+    font-weight: 500;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.summary .checkout .link-sum1 {
+    font-size: 14px;
+    color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.summary .checkout .cards-sum {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(231, 231, 231);
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.summary .checkout .cards-sum p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #292727;
+    font-weight: 500;
+}
+
+.summary .checkout .cards-sum p span {
+    font-weight: 600;
+    color: rgb(245, 87, 87);
+}
+
+.summary .checkout .cards-sum .subttal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.summary .checkout .cards-sum .subttal h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: darkorange;
+}
+
+.summary .checkout .cards-sum .subttal h3 {
+    font-size: 20px;
+    color: rgb(245, 87, 87);
+    font-weight: 600;
+}
+
+.summary .checkout .cards-sum h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #292727;
+}
+
+.summary .checkout .cards-sum .checkut {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    background: darkgoldenrod;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 430px) {
+    .summary {
+        flex-direction: column;
+    }
+    
+    .summary .summarybtn .btn {
+        margin-bottom: 10px;
+    }
+    
+}

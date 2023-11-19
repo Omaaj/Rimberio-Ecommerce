@@ -1,0 +1,316 @@
+.products {
+    display: flex;
+    margin-top: 4rem;
+    padding: 20px 0px 0 20px;
+    position: relative;
+}
+
+.products .left {
+    flex: 1;
+}
+
+
+.products .left .filterItem1,
+.products .left .filterItem {
+    margin-bottom: 30px;
+
+}
+
+.products .left .filterItem2 h3,
+.products .left .filterItem1 h3,
+.products .left .filterItem h3 {
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+
+.products .left .filterItem .inputItem label{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform:capitalize;
+    cursor: pointer;
+}
+
+.products .left .filterItem2 .inputItems input,
+.products .left .filterItem .inputItem input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.products .left .filterItem1 .inputItems {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+.products .left .filterItem1 .inputItems input {
+    margin: 0 3px;
+}
+
+.products .right {
+    flex: 4;
+}
+
+.products .right .image_box {
+    height: 200px;
+    overflow: hidden;
+    /* width: 57rem; */
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    /* padding-right: 30px; */
+    /* margin-bottom: 20px;
+    margin-right: 40px; */
+}
+
+.products .right .image_box img {
+    width: 100%;
+    border-radius: 5px;
+    /* height: 100%; */
+}
+
+.products .right .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    /* min-width: 900px; */
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.products .left .filterItem2 {
+    margin-bottom: 25px;
+}
+
+.products .left .filterItem2 select {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    font-size: 13px;
+    cursor: pointer;
+    background: #44aafd;
+    font-weight: 600;
+    border-radius: 5px;
+    /* padding-left: 10px; */
+}
+
+.products .left .filterItem2 select option {
+    background: #fff;
+    height: 100%;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.products .right .spans {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.products .right .spans p {
+    font-size: 16x;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
+
+.products .right .spans p span {
+    color: #ff8500;
+    font-weight: 600;
+}
+
+.filters-slide {
+    display: none;
+}
+
+@media screen and (max-width: 1180px) {
+    .products {
+        padding: 20px 20px 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .products .left {
+        margin-right: 10px;
+    }
+    .products .right .flex {
+        gap: 30px 20px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .products {
+        flex-direction: column;
+        padding: 20px 0px 0 0px;
+    }
+    
+    .products .left {
+        position: fixed;
+        max-width: 100%;
+        background: #fff;
+        width: 100%;
+        top: 5rem;
+        height: 5rem;
+        z-index: 7;
+        padding: 0rem 20px 0 20px;
+    }
+    
+    .products .left .sharps {
+        display: flex;
+        align-items: center;
+    }
+
+    .products .left .filterItem2 h3,
+    .products .left .filterItem1 h3,
+    .products .left .filterItem h3 {
+        margin-bottom: 1px;
+    }
+
+    .products .left .filterItem {
+        overflow: hidden;
+    }
+
+    .inpuusts {
+        overflow-x: auto;
+    }
+
+    .inpuusts::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .products .left .filterItem {
+        z-index: 2;
+    }
+    .products .left .filterItem .inputItem {
+        display: flex;
+        gap: 0 10px;
+    }
+    
+    .products .left .filterItem .inputItem label{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    
+    .combined-filter {
+        display: flex;
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        height: 15rem;
+        margin-right: 0;
+        align-items: flex-start;
+        transition: all 0.5s ease-in;
+        top: 0;
+        left: 0;
+        padding: 10rem 2rem 0 1.2rem;
+        z-index: 1;
+        transform: translateY(-100%);
+    }
+
+    .filed {
+        transform: translateY(0);
+    }
+
+    .products .right {
+        padding: 5rem 10px 0 10px;
+    }
+    
+    .products .right .flex {
+        gap: 30px 10px;
+        /* min-width: 900px; */
+        justify-content: space-evenly;
+    }
+    
+    .products .left .filterItem2 {
+        margin-bottom: 0px;
+        margin-left: 60px;
+    }
+    
+    .filters-slide {
+        display: block;
+        background: #ffa749;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #111;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        text-transform: uppercase;
+        z-index: 5;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .products .left {
+        position: fixed;
+        max-width: 100%;
+        background: #fff;
+        width: 100%;
+        top: 5rem;
+        height: 8rem;
+        z-index: 7;
+        padding: 0rem 20px 0 20px;
+    }
+
+    .products .left .filterItem2 {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .combined-filter {
+        flex-direction: column;
+        width: 100%;
+        height: 21.5rem;
+        margin-right: 0;
+        padding: 12.4rem 2rem 0 1.2rem;
+    }
+
+    .filed {
+        transform: translateY(0);
+    }
+
+    .products .left .filterItem1 .inputItems input {
+        margin: 0px 5px;
+        width: 100%;
+    }
+    
+    .products .left .filterItem1 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .products .left .filterItem2 {
+        width: 100%;
+    }
+
+    .products .left .filterItem2 select {
+        width: 100%;
+    }
+
+    .products .right {
+        padding: 7rem 10px 0 10px;
+    }
+    
+    .products .right .flex {
+        gap: 30px 10px;
+        /* justify-content: start; */
+    }
+
+    .products .right .spans p {
+        margin-right: 15px;
+    }
+    
+}

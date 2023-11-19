@@ -1,0 +1,190 @@
+footer {
+    margin-top: 4rem;
+    background: #f5f5f5;
+    padding: 2rem 1rem 5px 2rem;
+}
+
+footer .footers .today {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+footer .footers .today .today-1 {
+    margin-right: 6rem;
+}
+
+footer .footers .today .today-1 .logo-1 img {
+    width: 130px;
+    margin-top: -25px;
+    object-fit: contain;
+}
+
+footer .footers .today .today-1 .logo-1 .crypto {
+    line-height: 1.6;
+    margin: -2rem 0 10px 0rem;
+    font-size: 16px;
+    color: #111;
+    font-weight: 700;
+    /* letter-spacing: 1.2px; */
+}
+
+footer .footers .today .today-1 .logo-1 .crypto span {
+    display: block;
+    color: #f7921a;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: normal;
+}
+
+footer .footers .today .today-1 p {
+    font-size: 15px;
+    color: #111;
+    line-height: 1.6;
+    width: 300px;
+}
+
+footer .footers .today .cobinesd {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+footer .footers .today .cobinesd .quick {
+    width: 300px;
+}
+
+footer .footers .today .cobinesd .quick .quick-1 {
+    position: relative;
+}
+
+footer .footers .today .cobinesd .quick .quick-1 .line {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 13px;
+    letter-spacing: 1.5px;
+}
+
+footer .footers .today .cobinesd .quick .quick-1 .lines {
+    background-color: #f7921a;
+    width: 60px;
+    height: 2px;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    margin-bottom: 30px;
+}
+
+footer .footers .today .cobinesd .stay ul,
+footer .footers .today .cobinesd .quick ul {
+    list-style: none;
+}
+
+footer .footers .today .cobinesd .stay ul li,
+footer .footers .today .cobinesd .quick ul li {
+    position: relative;
+    margin: 2px 0;
+    font-size: 15px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease 0.2s;
+}
+
+footer .footers .today .cobinesd .stay ul li span:hover,
+footer .footers .today .cobinesd .quick ul li span:hover {
+    color: #f7921a;
+}
+
+footer .footers .today .cobinesd .stay ul li i,
+footer .footers .today .cobinesd .quick ul li i {
+    color: rgb(55, 55, 55);
+    margin-right: 5px;
+}
+
+footer .footers .today .cobinesd .stay ul li span,
+footer .footers .today .cobinesd .quick ul li span {
+    color: #111;
+    transition: all 0.4s ease;
+}
+
+
+footer .footers .today .cobinesd .stay {
+    width: 300px;
+}
+
+
+footer .footers .today .cobinesd .stay .stay-1 {
+    position: relative;
+}
+
+footer .footers .today .cobinesd .stay .stay-1 .with {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 13px;
+    letter-spacing: 1.5px;
+}
+
+footer .footers .today .cobinesd .stay .stay-1 .dash {
+    background-color: #f7921a;
+    width: 60px;
+    height: 2px;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    margin-bottom: 25px;
+}
+
+footer .footers .bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+footer .footers  .bottom img {
+    width: 100px;
+    height: 100px;
+}
+
+footer .footers  .bottom span {
+    font-size: 12px;
+    margin-left: 10px;
+    color: gray;
+}
+
+@media screen and (max-width: 950px) {
+    footer {
+        padding: 2rem 1rem 5px 1rem;
+    }
+    
+    footer .footers .today {
+        flex-direction: column;
+    }
+    
+    footer .footers .today .today-1 {
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    footer .footers .today .today-1 p {
+        width: 100%;
+    }
+    
+    footer .footers .today .cobinesd {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    
+    footer .footers .today .cobinesd .quick {
+        width: 200px;
+        margin-right: 3rem;
+    }
+    
+    footer .footers .today .cobinesd .stay {
+        width: 300px;
+    }
+    
+}

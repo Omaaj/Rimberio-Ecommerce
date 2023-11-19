@@ -1,0 +1,272 @@
+.formsss {
+    display: flex;
+    margin-top: 4.4rem;
+    /* flex-direction: column; */
+    padding: 1rem 0rem 0 1rem;
+}
+
+.formsss .div1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 2rem;
+    background: #fff;
+    flex: 2;
+    padding: 10px;
+    /* width: 600px; */
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.formsss .payments {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 2rem;
+    background: #fff;
+    flex: 2;
+    padding: 10px;
+    /* width: 400px; */
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.formsss .payments h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2f1c6a;
+}
+
+.formsss .payments .displays1 {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.formsss .payments .displays1 .paymensts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    width: 300px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 10px;
+    /* line-height: 50px; */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.formsss .payments .displays1 .paymensts.one {
+    margin-right: 10px;
+    background: #ddd;
+}
+
+.formsss .payments .displays1 .paymensts.two {
+    margin-left: 10px;
+    background: #ddd;
+}
+
+.formsss .payments .displays1 .paymensts:hover {
+    background: #ddd;
+    transition: all 0.4s ease;
+}
+
+.formsss .payments .displays1 .paymensts h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -4px;
+}
+
+.formsss .payments .btc-payments {
+    transition: all 0.4s ease;
+}
+
+.formsss .payments .btc-payments .btccomplet {
+    /* text-align: center; */
+    margin-bottom: 10px;
+}
+
+.formsss .payments .btc-payments.fade {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+
+.formsss .payments .btc-payments .btccomplet .completess {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.formsss .payments .btc-payments .btccomplet .trans-1 {
+    font-size: 16px;
+    margin-right: 4px;
+    color: #5c5c5c;
+}
+
+.formsss .payments .btc-payments .btccomplet img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.formsss .payments .btc-payments .btccomplet .send {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3e3e3e;
+    margin-bottom: 6px;
+    /* text-align: center; */
+}
+
+.formsss .payments .btc-payments .btccomplet .send span {
+    font-weight: 700;
+    color: #111;
+}
+
+.formsss .payments .btc-payments .btccomplet input {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #111;
+    background: #ddd;
+}
+
+.formsss .payments .btc-payments ul {
+    padding: 10px 0 10px 20px;
+}
+
+.formsss .payments .btc-payments ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.btns-com {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btns-com button {
+    flex: 1;
+    margin-right: 10px;
+    /* height: 40px; */
+    background: #2879fe;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    /* width: 100%; */
+}
+
+.btns-com button:hover {
+    background: #0a66f9;
+    transition: all 0.4s ease;
+}
+
+.btns-com .securityss {
+    display: flex;
+    align-items: center;
+    color: #727586;
+}
+
+.btns-com .securityss span {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.payplinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paypal-combined {
+    background: #ffc439;
+    width: 330px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    height: 45px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease;
+}
+
+.paypal-combined:hover {
+    background: #f7b10d;
+    transition: all 0.4s ease;
+}
+
+.payplinks h4 {
+    margin-left: 5px;
+    color: #0a66f9;
+}
+
+
+@media screen and (max-width: 950px) {
+    .formsss {
+        display: block;
+        padding: 1rem 2rem 0 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .formsss {
+        padding: 1rem 0rem 0 1rem;
+    }
+
+    .formsss .payments .displays1 {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .formsss .payments .displays1 .paymensts {
+        width: 100%;
+    }
+
+    .formsss .payments .displays1 .paymensts.one {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .formsss .payments .displays1 .paymensts.two {
+        margin-left: 0px;
+        margin-top: 15px;
+        background: #ddd;
+    }
+    
+    
+    .btns-com {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+        
+    .btns-com button {
+        margin-right: 0px;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    .paypal-combined {
+        width: 100%;
+    }
+    
+
+}

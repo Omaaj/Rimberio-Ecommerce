@@ -1,0 +1,21 @@
+.stores {
+    margin: 5rem 0;
+}
+
+.stores .second3 .image_box {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.stores .second3 .image_box img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.second .wrapper {
+    margin-top: 2rem;
+}

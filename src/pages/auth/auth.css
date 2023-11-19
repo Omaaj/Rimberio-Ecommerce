@@ -1,0 +1,410 @@
+.sectionss {
+    position: relative;
+}
+
+.sectionss .started {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("./images/img1.jpg");
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: center;
+    -moz-background-size: center;
+    -o-background-size: center;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.65);
+    z-index: -1;
+
+}
+
+.sectionss .started .header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0.2rem 7rem 0 7rem;
+}
+
+.sectionss .started .header .logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+.actives.active_links {
+    color: #111; 
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.actives {
+    margin-right: 20px;   
+    color: orange; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600; 
+    transition: all 0.4s ease;
+}
+
+.sectionss .started .header .register {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.sectionss .started .header .register .register-1 {
+    width: 104px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    margin-right: 20px;
+}
+
+.sectionss .started .header .register .register-1.change {
+    width: 83px;
+    margin-right: 15px;
+}
+
+.sectionss .started .header .register .register-1 a {
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.sectionss .started .header .register .register-2 a {
+    text-align: center;
+    width: 53px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: #cccccc;
+    letter-spacing: 1px;
+}
+
+.sectionss .started .header .register .register-2 a.value {
+    width: 74px;
+    height: 27px;
+    line-height: 38px;
+} 
+
+/* section */
+.sectionss .started .get-started {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+    position: relative;
+}
+
+.sectionss .started .get-started .getstar {
+    width: 468px;
+    padding: 0 64px;
+}
+
+.sectionss .started .get-started .getstar .get-star .get {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.43);
+    font-weight: 400;
+    user-select: none;
+    line-height: 1.1;
+    pointer-events: none;
+}
+ 
+.sectionss .started .get-started .getstar form .user{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sectionss .started .get-started .getstar form .user input {
+    width: 100%;
+    height: 53px;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    padding-left: 45px;
+    padding-right: 60px;
+    color: #fff;
+    opacity: 2;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 14px;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+
+.sectionss .started .get-started .getstar form .user input::placeholder {
+    color: #ddd;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 14px;
+} 
+
+.sectionss .started .get-started .getstar form .user  .showBtn,
+.sectionss .started .get-started .getstar form .user  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 16px;
+    cursor: default;
+    z-index: 2;
+}
+
+.chracter {
+    display: flex;
+    justify-content: center;
+}
+.checked {
+    margin:  10px 20px 0 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+.chracter .text {
+    margin:  10px 20px 0 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    display: none;
+}
+
+
+.chracter .text2 {
+    margin: 10px 15px 0 0px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.chracter .text2.weak {
+    color: #ff4757;
+}
+.chracter .text2.medium {
+    color: orange;
+}
+.chracter  .text2.strong {
+    color: #23ad5c;
+}
+
+.sectionss .started .get-started .getstar form .user  i {
+    height: 100%;
+    width: 50px;
+    line-height: 57px;
+    text-align: center;
+}
+
+.sectionss .started .get-started .getstar form .user  .showBtn {
+    right: 0;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    width: 70px;
+    height: 100%;
+    line-height: 55px;
+    text-align: center;
+}
+
+.sectionss .started .get-started .getstar .btn,
+.sectionss .started .get-started .getstar form  .btn {
+    width: 100%;
+    height: 53px;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    background: #f7921a;
+    /* padding-left: 0px;
+    padding-right: 60px; */
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /* opacity: 0.5; */
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.sectionss .started .get-started .getstar .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionss .started .get-started .getstar .btn .icons {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.sectionss .started .get-started .getstar .lines {
+    text-align: center;
+    margin: 0px 0 20px 0;
+    position: relative;
+}
+
+.sectionss .started .get-started .getstar .lines .lines_1 {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.9;
+    position: relative;
+    margin: 20px 0;
+}
+
+.sectionss .started .get-started .getstar .lines p {
+    color: #111;
+    padding: 0 10px;
+    position: absolute;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.sectionss .started .get-started .getstar .already {
+    font-size: 16px;
+}
+
+.sectionss .started .get-started .getstar .already span {
+    color: #fff;
+    user-select: none;
+}
+
+.sectionss .started .get-started .getstar .already a {
+    color: #f7921a;
+}
+
+/* Login */
+.sectionss .started .get-started .getstar .forget {
+    font-size: 13px;
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.sectionss .started .get-started .getstar .createe {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.sectionss .started .get-started .getstar .createe .account1 {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.already .already1,
+.already span{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 4px;
+    text-decoration: none;
+}
+
+/* footer */
+.footo-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 10rem 2rem 10rem;
+}
+
+.footo-1 ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.footo-1 p,
+.footo-1 ul li a {
+    margin-right: 25px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.30);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 450px) {
+    .sectionss .started .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2rem 0rem 0 0rem;
+    }
+
+    .sectionss .started .header .register {
+        margin-top: -1rem;
+        margin-left: 30px;
+    }
+
+    .sectionss .started .get-started .getstar {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    /* .sectionss .started .get-started .getstar .btn,
+    .sectionss .started .get-started .getstar form  .btn {
+        width: 100%;
+        height: 53px;
+        position: relative;
+        outline: none;
+        border: none;
+        border-radius: 35px;
+        background: #f7921a;
+        padding-left: 45px;
+        padding-right: 60px;
+        color: #ffffff;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        cursor: pointer;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    
+    .sectionss .started .get-started .getstar .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    
+}

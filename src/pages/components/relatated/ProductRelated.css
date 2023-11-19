@@ -1,0 +1,14 @@
+.flexx {
+    overflow-x: auto;
+}
+
+
+.flexx::-webkit-scrollbar{
+    display: none;
+}
+
+.flexs {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}

@@ -1,0 +1,241 @@
+.categories {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.categories .first .img_box,
+.categories .second .img_box,
+.categories .third .img_box {
+    position: relative;
+}
+
+.categories .first .img_box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+.categories .third .img_box button,
+.categories .second .img_box button,
+.categories .first .img_box button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 9px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+.categories .third .img_box button .links,
+.categories .second .img_box button .links,
+.categories .first .img_box button .links {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+
+
+.categories .third .img_box.six:hover button .links,
+.categories .third .img_box.five:hover button .links,
+.categories .third .img_box.four:hover button .links,
+.categories .second .img_box.three:hover button .links,
+.categories .first .img_box.two:hover button .links,
+.categories .first .img_box.one:hover button .links {
+    color: #fff;
+    font-weight: 600;
+}
+
+.categories .third .img_box.six:hover button,
+.categories .third .img_box.five:hover button,
+.categories .third .img_box.four:hover button,
+.categories .second .img_box.three:hover button,
+.categories .first .img_box.two:hover button,
+.categories .first .img_box.one:hover button {
+    background: blue;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.categories .second .img_box img {
+    width: 430px;
+    height: 504px;
+    object-fit: cover;
+    margin: 0 5px;
+}
+
+.third .third1 {
+    display: flex;
+}
+
+.third .third1 .img_box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.third .third1 .img_box img.one {
+    margin-right: 5px;
+}
+
+.third .third2 .img_box img {
+    width: 504px;
+    height: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+    .categories {
+        padding-left: 20px;
+    }
+    .categories .first .img_box img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .categories .second .img_box img {
+        width: 350px;
+        height: 405px;
+    }
+    
+    .third .third1 .img_box img {
+        width: 209px;
+        height: 209px;
+    }
+    
+    
+    .third .third2 .img_box img {
+        width: 420px;
+        height: 190px;
+    }
+    
+}
+
+@media screen and (max-width: 940px) {
+    .categories .second {
+        display: none;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+    }
+
+    .categories .first {
+        margin-right: 5px;
+    }
+
+    .categories .first .img_box img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .third .third1 .img_box img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .third .third1 .img_box img.one {
+        margin-right: 5px;
+    }
+
+    .third .third2 .img_box img {
+        width: 567px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .categories .first .img_box img {
+        width: 255px;
+        height: 255px;
+    }
+
+    .third .third1 .img_box img {
+        width: 255px;
+        height: 255px;
+    }
+
+    .third .third1 .img_box img.one {
+        margin-right: 5px;
+    }
+
+    .third .third2 .img_box img {
+        width: 518px;
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .categories .first {
+        margin-right: 5px;
+        margin-left: 25px;
+    }
+
+    .categories .first .img_box img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .third .third1 .img_box img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .third .third2 .img_box img {
+        width: 466px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .categories .first {
+        display: none;
+    }
+
+    .third .third1 {
+        padding-right: 20px;
+    }
+
+    .third .third1 .img_box img {
+        width: 250px;
+        height: 250px;
+
+    }
+
+    .third .third2 .img_box img {
+        width: 505px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .third .third1 .img_box img {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .third .third1 {
+        padding-right: 0px;
+    }
+
+
+    /* .third .third1 .img_box.four {
+        margin-right: px;
+    } */
+
+    .third .third2 .img_box img {
+        /* display: none; */
+        width: 100%;
+        height: 100%;
+    }
+
+}

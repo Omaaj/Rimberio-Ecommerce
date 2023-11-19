@@ -1,0 +1,198 @@
+.container {
+    margin-top: 4.4rem;
+    padding: 1rem 1rem;
+    width: 100%;
+    /* background: #f1f1f1; */
+}
+
+.container form {
+    display: flex;
+    width: 100%;
+}
+
+.notes {
+    margin: 10px 0;
+    background: rgb(243, 151, 151);
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.notes p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notes p span {
+    color: red;
+    font-weight: 800;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #434242;
+}
+
+.container form .card-summary {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    width: 350px;
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container .card_add {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background: #fff;
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container .card_add h3 {
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: 500;
+    color: sienna;
+}
+
+.container .card_add .input_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card_add .input_field label {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.container .card_add .input_field .select,
+.container .card_add .input_field input {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #868585;
+    outline: none;
+    padding: 0 10px;
+}
+
+
+.container .card_add .checkut {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    background: darkgoldenrod;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.container-sucess {
+    display: flex;
+    justify-content: center;
+    margin: 8rem 0;
+}
+
+.container-sucess .center-succes {
+    background: #fff;
+    padding: 15px;
+    width: 400px;
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container-sucess .center-succes h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #434242;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-sucess .center-succes p {
+    font-size: 18px;
+    font-weight: 600;
+    color: dodgerblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-sucess .center-succes button {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    background: darkgoldenrod;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        padding: 1rem 2rem;
+        width: 100%;
+    }    
+            
+    .notes {
+        margin: 10px 0;
+        background: rgb(243, 151, 151);
+        padding: 20px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .container form {
+        display: block;
+        width: 100%;
+    }
+    .container form .card-summary {
+        display: none;
+    }
+
+    .container .card_add {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        background: #fff;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    .container-sucess {
+        width: 100%;
+        padding: 0 10px 0 5px ;
+    }
+    
+    .container-sucess .center-succes {
+        width: 100%;
+    }
+    
+}

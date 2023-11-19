@@ -1,0 +1,69 @@
+.background {
+    width: 100%;
+    background: #ebe9e9;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.background .right {
+    line-height: 1.5;
+}
+
+.background .right .limited {
+    color: rgb(215, 111, 36);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.background .right .limited1 {
+    color: rgb(215, 111, 36);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.background .right button {
+    padding: 10px 25px;
+    margin-top: 20px;
+    background: #111;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+}
+
+.background .right button:hover {
+    background: rgb(215, 111, 36);
+    transition: all 0.4s ease;
+}
+
+.background .right button .links {
+    font-size: 14px;
+    width: 100%;
+    text-decoration: none;
+    color: cornsilk;
+    /* color: #ebe9e9; */
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.background img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 700px) {
+    .background {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
