@@ -56,7 +56,7 @@ export default function Payments() {
       toast.success("Order Saved")
       navigate("/checkout-success")
     } catch (error) {
-      toast.error("Please navigate back to the Checkout details page, refresh the page, and then proceed to fill in the input field.")
+      toast.error("We're unable to retrieve your shipping and billing address. Kindly return to the Checkout details page, refresh it, and proceed to complete the required information in the input field. Thank you for your cooperation.")
     }
   }
 
