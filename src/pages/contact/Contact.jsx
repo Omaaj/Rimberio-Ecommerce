@@ -56,7 +56,7 @@ export default function Contact() {
                     />
                     <textarea 
                       name='message' 
-                      placeholder='Enter Your Message' 
+                      placeholder='Your Message' 
                       required 
                     />
                     <button type='submit'>Send</button>
