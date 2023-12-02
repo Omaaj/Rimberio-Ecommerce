@@ -182,6 +182,33 @@
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
+.tasx {
+    margin-bottom: 20px;
+}
+
+.conside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.conside h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #292727;
+}
+
+.conside h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #292727;
+}
+
+.tasx .paea {
+    font-size: 14px;
+    width: 320px;
+}
 
 @media screen and (max-width: 430px) {
     .summary {
