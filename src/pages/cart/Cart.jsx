@@ -141,10 +141,6 @@ export default function Cart() {
                           <h3>{`$${cartTotalAmount.toFixed(2)}`}</h3>
                         </div>
                         <div className="tasx">
-                          <div className="conside">
-                            <h3>Tax Fee</h3>
-                            <h4>12%</h4>
-                          </div>
                           <div className='paea'> Once payment is made, we'll email your shipping fee and tracking number. Thanks for choosing our services!</div>
                         </div>
                         <motion.button 
