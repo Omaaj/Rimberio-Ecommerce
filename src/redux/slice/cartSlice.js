@@ -64,7 +64,7 @@ const cartSlice = createSlice({
             });
             const totalAmount = array.reduce((a, b) => {
                 return a + b;
-            }, 0) + 12
+            }, 0)
             state.cartTotalAmount = totalAmount;
         },
         CALCULATE_TOTAL_QUANTITY(state, action) {
