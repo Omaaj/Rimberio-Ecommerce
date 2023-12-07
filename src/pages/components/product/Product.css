@@ -165,6 +165,61 @@
     display: none;
 }
 
+.contactsize {
+    margin-bottom: 20px;
+    padding-right: 2rem;
+}
+
+.contactsize h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contactsize form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactsize form input {
+    border: none;
+    border: 1px solid #111;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.contactsize form select {
+    width: 50%;
+    text-align: center;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #111;
+}
+
+.contactsize form button {
+    width: 45%;
+    height: 30px;
+    margin-left: 10px;
+    border: 1px solid rgb(3, 65, 182);
+    border-radius: 50px;
+    background: rgb(3, 65, 182);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.contactsize form button:hover {
+    border: 1px solid rgb(20, 101, 252);
+    background: rgb(20, 101, 252);
+}
+
 @media screen and (max-width: 1180px) {
     .wrappers {
         padding-right: 50px;
@@ -174,16 +229,14 @@
         margin: 20px 60px 20px 5rem;
     }
     
-    
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 865px) {
     .wrappers .second .mainImage img {
         width: 300px;
         height: 400px;
         margin-right: 30px;
     }
-    
 }
 
 @media screen and (max-width: 700px) {
@@ -227,6 +280,5 @@
     .centerss {
         margin: 3rem 1rem;
     }
-    
 
 }

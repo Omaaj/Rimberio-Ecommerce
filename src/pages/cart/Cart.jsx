@@ -142,6 +142,10 @@ export default function Cart() {
                         </div>
                         <div className="tasx">
                           <div className='paea'> Once payment is made, we'll email your shipping fee and tracking number. Thanks for choosing our services!</div>
+                          <hr />
+                          <div className="confimss">If you wish to inquire about your shipping costs prior to completing the payment process, please feel free to reach out to us directly. Our dedicated Customer Service team will promptly assist you via email. 
+                          <span><Link to="/contact">Contact US</Link></span>
+                          </div>
                         </div>
                         <motion.button 
                           className='checkut' 

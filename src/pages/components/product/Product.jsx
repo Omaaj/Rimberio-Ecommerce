@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import NavBar from '../navBar/NavBar'
 import Footer from '../footer/Footer'
 import { useParams } from 'react-router-dom'
@@ -12,7 +12,9 @@ import { selectFilteredProducts } from '../../../redux/slice/filterSlice'
 import ProductRelated from '../relatated/ProductRelated'
 import { ADD_TO_CART, CALCULATE_TOTAL_QUANTITY, DECREASE_CART, selectCartItems } from '../../../redux/slice/cartSlice'
 import StarsRating from 'react-star-rate'
+import emailjs from '@emailjs/browser';
 import Helment from '../helment/Helment'
+import { toast } from 'react-toastify'
 
 
 
@@ -20,6 +22,18 @@ export default function Product() {
     const {id} = useParams()
     const [details, setDetails] = useState(null);
     const [selectedImage, setSelectedImage] = useState(0);
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID2, 'template_k08lyqg', form.current, 'fW6dYxB1XoxEvpBJD')
+        .then((result) => {
+          toast.success(`${details?.title} size received`);
+        }, (error) => {
+            toast.error(error.text);
+        });
+    };
 
     const dispatch = useDispatch()
   
@@ -63,27 +77,6 @@ export default function Product() {
       fetchData('nutrient-products', id, setDetails);
     }, [id, fetchData]); 
 
-    // const fetchData = async (collectionName, id, setDetails) => {
-    //   const docRef = doc(db, collectionName, id);
-    //   const docSnap = await getDoc(docRef);
-    
-    //   if (docSnap.exists()) {
-    //     const obj = {
-    //       id: details?.id, 
-    //       ...docSnap.data(),
-    //     };
-    //     setDetails(obj);
-    //   } else {
-    //     // toast.error("Product Not Found")
-    //   }
-    // };
-    
-    // useEffect(() => {
-    //   fetchData('products', id, setDetails);
-    //   fetchData('men-products', id, setDetails);
-    //   fetchData('electro-products', id, setDetails);
-    //   fetchData('nutrient-products', id, setDetails);
-    // },[id])
 
     const related = filteredProducts.filter(item => item.brand === details?.brand)
 
@@ -100,6 +93,7 @@ export default function Product() {
       dispatch(CALCULATE_TOTAL_QUANTITY())
   
     }  
+
 
   return (
     <>
@@ -141,6 +135,38 @@ export default function Product() {
                 :
                 null
               }
+              <div className="contactsize">
+                {details && (details?.cat === 'WomenWears' || details?.cat === 'MenWears') && (
+                  <>
+                    <h3>Select size</h3>
+                    <form ref={form} onSubmit={sendEmail}>
+                    <input 
+                      type="text" 
+                      name='product'
+                      placeholder='Name of the product'
+                      value={details?.title}
+                      // disabled
+                      required
+                    />
+                    <div className="shinesd">
+                      <select 
+                        name='size'
+                        required
+                      >
+                        <option value="-- Select Size --">-- Select Size --</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="X-Large">X-Large</option>
+                        <option value="XX-Large">XX-Large</option>
+                      </select>
+                      <button type='submit'>Send</button>
+
+                    </div>
+                    </form>
+                  </>
+                )}
+              </div>
               
               <div className="buttons">
                 {
@@ -178,20 +204,6 @@ export default function Product() {
                 :
                 null
               }
-              {/* {
-                details ? (
-                  <>
-                    <div className="adds">
-                      <div className="icons">
-                        <FavoriteBorderOutlinedIcon sx={{ fontSize: 18,  }} />
-                      </div>
-                      <span>ADD TO WISHLIST</span>
-                    </div>
-                  </>
-                )
-                :
-                null
-              } */}
               {
                 details ? (
                   <>

@@ -64,6 +64,8 @@
     .background {
         flex-direction: column;
         justify-content: center;
+        width: 110%;
+        margin-left: -10px;
     }
     
 }

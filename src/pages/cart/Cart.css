@@ -185,10 +185,15 @@
 .tasx {
     margin-bottom: 20px;
 }
-
+.tasx .confimss,
 .tasx .paea {
     font-size: 14px;
+    padding-bottom: 10px;
     width: 320px;
+}
+
+.tasx .confimss {
+    padding: 10px 0;
 }
 
 @media screen and (max-width: 430px) {
@@ -200,4 +205,19 @@
         margin-bottom: 10px;
     }
     
+
+    
+}
+
+@media screen and (max-width: 390px) {
+    .tasx .confimss,
+    .tasx .paea {
+        font-size: 14px;
+        padding-bottom: 10px;
+        width: 250px;
+    }
+
+    .tasx .confimss {
+        padding: 10px 0;
+    }
 }

@@ -24,12 +24,12 @@ export const sliders = [
         imgP : "02: Children's Sweaters"
     },
     {
-        img1 : "./img/stock-photo-247983873.jpg",
-        imgP : "02: Apples Wrist Watch",
+        img2 : "./img/stock-photo-247983873.jpg",
+        imgP1 : "02: Apples Wrist Watch",
         exclus: "New",
         coll : "Sales",
-        img2 : "./img/stock-photo-1050248206.jpg",
-        imgP1 : "01: Men's nice Strong Shoes"
+        img1 : "./img/stock-photo-1050248206.jpg",
+        imgP : "01: Men's nice Strong Shoes"
     },
     {
         img1 : "./img/stock-photo-1069466938.jpg",

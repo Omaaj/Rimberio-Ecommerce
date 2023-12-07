@@ -46,14 +46,14 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 389.9px) {
     .boxss .img_box11 img{
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
 
     .boxss .detailed {
-        width: 250px;
+        width: 300px;
     }
     
     

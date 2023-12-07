@@ -9,6 +9,7 @@ import FeaturedProducts from '../components/featuredproduct/FeaturedProducts';
 import Trending from '../components/trending/Trending'
 import TrendingFea from '../components/trending/TrendingFea'
 import Clock from '../components/timeoffering/clock/Clock'
+import Footers from '../components/footers/Footers'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <Trending type="Trending"/>
         <Offers />
         <TrendingFea type="Featured"/>
-        <Footer />
+        <Footers />
       </div>
     </Helment>
   )

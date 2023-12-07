@@ -201,7 +201,7 @@
     }
 
     .third .third1 {
-        padding-right: 20px;
+        padding-right: 0px;
     }
 
     .third .third1 .img_box img {
@@ -223,8 +223,10 @@
         
     }
 
-    .third .third1 {
-        padding-right: 0px;
+    .third .third1,
+    .third .third2 {
+        margin-left: -20px;
+        width: 110%;
     }
 
 

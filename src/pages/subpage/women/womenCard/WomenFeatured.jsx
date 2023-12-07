@@ -125,7 +125,6 @@ export default function WomenFeatured({data, Images, number, pages}) {
           </div>
           <div className="spans">
             <p>
-              {/* <span>{filteredProducts.length}</span> */}
               Results</p>
             <Search 
               value={search} 
