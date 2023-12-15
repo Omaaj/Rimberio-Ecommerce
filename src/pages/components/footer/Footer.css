@@ -154,7 +154,7 @@
     color: gray;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
     .footer {
         padding: 2rem 1rem 5px 1rem;
     }

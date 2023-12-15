@@ -14,7 +14,7 @@ import Footers from '../components/footers/Footers'
 export default function Home() {
   return (
     <Helment title={"Home"}>
-      <div className='home'>
+      <div className='homess'>
         <NavBar />
         <Slider/>
         <FeaturedProducts  type="New Arrivals"/>
@@ -22,7 +22,7 @@ export default function Home() {
         <Trending type="Trending"/>
         <Offers />
         <TrendingFea type="Featured"/>
-        <Footers />
+        <Footer />
       </div>
     </Helment>
   )

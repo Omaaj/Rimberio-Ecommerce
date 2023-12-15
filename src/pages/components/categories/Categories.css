@@ -92,28 +92,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .categories {
-        padding-left: 20px;
-    }
     .categories .first .img_box img {
-        width: 200px;
-        height: 200px;
+        width: 210px;
+        height: 210px;
     }
     
     .categories .second .img_box img {
-        width: 350px;
-        height: 405px;
+        width: 360px;
+        height: 426.5px;
     }
     
     .third .third1 .img_box img {
-        width: 209px;
-        height: 209px;
+        width: 219px;
+        height: 219px;
     }
     
     
     .third .third2 .img_box img {
-        width: 420px;
-        height: 190px;
+        width: 443px;
+        height: 202px;
     }
     
 }
@@ -220,13 +217,11 @@
     .third .third1 .img_box img {
         width: 100%;
         height: 100%;
-        
     }
 
     .third .third1,
     .third .third2 {
-        margin-left: -20px;
-        width: 110%;
+        width: 100%;
     }
 
 
