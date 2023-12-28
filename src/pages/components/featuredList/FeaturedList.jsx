@@ -22,8 +22,7 @@ export default function FeaturedList({data}) {
                                 <img src={img} alt={title} />
                               </div>
                               <div className="detailed">
-                                  <h2>{title}</h2>
-                                  {/* <h2>{shortenText(title, 20)}</h2> */}
+                                <h2>{title.length > 20 ? title.substring(0, 20).concat("...") : title}</h2>
                                   <div className="prices">
                                       <h3>{`${oldPrice > 1 ? `$${oldPrice}` : ''}`}</h3>
                                       <h3 className='h3w'>{`$${price}`}</h3>
